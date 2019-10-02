@@ -1,33 +1,33 @@
-[½ºÇÁ¸µ MVC Èå¸§°ú ÁÖ¿ä ±¸¼º ÄÄÆ÷³ÍÆ®]
+[ìŠ¤í”„ë§ MVC íë¦„ê³¼ ì£¼ìš” êµ¬ì„± ì»´í¬ë„ŒíŠ¸]
 
 	1) client				------>		Dispatcher Servlet
-		- ¿äÃ»À» ¼ö½Å
+		- ìš”ì²­ì„ ìˆ˜ì‹ 
 
 
 	2) Dispatcher Servlet	------>		Handler Mapping
-		- Handler MappingÀÌ ÄÁÆ®·Ñ·¯ Á¤ÀÇ(Controller¸¦ Á¤ÇØÁÜ) : ÄÁÆ®·Ñ·¯¸¦ ÁöÁ¤ÇØÁÖ´Â ÄÁÆ®·Ñ·¯
+		- Handler Mappingì´ ì»¨íŠ¸ë¡¤ëŸ¬ ì •ì˜(Controllerë¥¼ ì •í•´ì¤Œ) : ì»¨íŠ¸ë¡¤ëŸ¬ë¥¼ ì§€ì •í•´ì£¼ëŠ” ì»¨íŠ¸ë¡¤ëŸ¬
 
 
 	3) Dispatcher Servlet	------>		Handler Adapter
-		- Handler Adapter°¡ ¿äÃ»À» Controller¿¡°Ô Àü¼Û
+		- Handler Adapterê°€ ìš”ì²­ì„ Controllerì—ê²Œ ì „ì†¡
 
 
 	4) Controller(handler)	------>		Handler Adapter
-		- ¿äÃ» °á°ú¿Í View¿¡ ´ëÇÑ Á¤º¸¸¦ return
+		- ìš”ì²­ ê²°ê³¼ì™€ Viewì— ëŒ€í•œ ì •ë³´ë¥¼ return
 
 
 	5) Handler Adapter		------>		Dispatcher Servlet
-		- [Model & View] °´Ã¼¸¦ ¸¸µé¾î¼­ Àü´Þ
+		- [Model & View] ê°ì²´ë¥¼ ë§Œë“¤ì–´ì„œ ì „ë‹¬
 
 
 	6) Dispatcher Servlet	------>		View Resolver
-		- ÀÀ´äÇÒ View¸¦ ¿äÃ»
+		- ì‘ë‹µí•  Viewë¥¼ ìš”ì²­
 
 
 	7) Dispatcher Servlet	------>		View
-		- View¸¦ ÀÌ¿ëÇØ¼­ ÀÀ´ä
+		- Viewë¥¼ ì´ìš©í•´ì„œ ì‘ë‹µ
 
 
-	ÇÚµé·¯ == ÄÁÆ®·Ñ·¯
+	í•¸ë“¤ëŸ¬ == ì»¨íŠ¸ë¡¤ëŸ¬
 
-	ÇÚµé·¯ ¸ÅÇÎ		------>		ÇÚµé·¯ ¾î´ðÅÍ(ÀÏ´ëÀÏ ¸ÅÇÎ)¸¦ Ã£¾Æ¼­ ÄÁÆ®·Ñ·¯¸¦ ºÎ¸¥´Ù.
+	í•¸ë“¤ëŸ¬ ë§¤í•‘		------>		í•¸ë“¤ëŸ¬ ì–´ëŒ‘í„°(ì¼ëŒ€ì¼ ë§¤í•‘)ë¥¼ ì°¾ì•„ì„œ ì»¨íŠ¸ë¡¤ëŸ¬ë¥¼ ë¶€ë¥¸ë‹¤.
